@@ -3,7 +3,7 @@
 #include <QFile>
 #include <QCoreApplication>
 #include <QDir>
-
+// create new comments
 CoffeeMain::CoffeeMain()
 {
     pr_cacheImagesDirectory = QString("%1/cache/images")

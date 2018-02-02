@@ -14,11 +14,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     coffeevisual.cpp \
-    Good.cpp \
     CoffeeMain.cpp \
-    GoodsTableModel.cpp
+    GoodsTableModel.cpp \
+    OrderModel.cpp
 
-RESOURCES += qml.qrc
+RESOURCES += qml.qrc \
+    icons.qrc \
+    js.qrc
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -33,6 +35,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     coffeevisual.h \
-    Good.h \
     CoffeeMain.h \
-    GoodsTableModel.h
+    GoodsTableModel.h \
+    OrderModel.h
+
+DISTFILES += \
+    GoodsTableModel.qml
+
+STATECHARTS +=
